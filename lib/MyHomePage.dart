@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'model/Chapters.dart';
 import 'model/bloc/HomePageBloc.dart';
-import 'package:quran_app/src/chapters/data.dart';
+import 'package:quran_app/src/chapters/Verses_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'utils/searchbar.dart';
 

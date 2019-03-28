@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran_app/model/Chapters.dart';
-import 'package:quran_app/src/chapters/data.dart';
+import 'package:quran_app/src/chapters/Verses_ui.dart';
 
 class SearchBar extends SearchDelegate<Chapters> {
   var _chap = <Chapters>[];
