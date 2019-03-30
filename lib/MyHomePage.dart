@@ -5,7 +5,6 @@ import 'package:quran_app/src/chapters/Verses_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'utils/searchbar.dart';
 
-
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -32,7 +31,8 @@ class _MyHomePageState extends State<MyHomePage> {
               IconButton(
                   icon: Icon(FontAwesomeIcons.search),
                   onPressed: () {
-                    showSearch(context: context, delegate: SearchBar(snapshot.data));
+                    showSearch(
+                        context: context, delegate: SearchBar(snapshot.data));
                   })
             ],
           ),
@@ -44,7 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
             mini: false,
             child: Icon(FontAwesomeIcons.quran),
             tooltip: "Resume",
-
           ),
         );
       },
@@ -110,6 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       builder: (context) => Data(
                             name: chap.name_simple,
                             id: chap.id,
+                            verses_count: chap.verses_count,
                           )));
             },
           ),

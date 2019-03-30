@@ -50,6 +50,6 @@ Main getmain(String jsonStr) {
 List<Chapters> getChapter(String jsonStr)  {
   final res = json.jsonDecode(jsonStr);
   Main main = standardSerializers.deserializeWith(Main.serializer, res);
-  print(main);
+  //print(main);
   return main.chapters.map((Chapters chap)=>chap).toList();
 }

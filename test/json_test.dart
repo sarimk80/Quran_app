@@ -39,4 +39,12 @@ void main() {
     //print(storyRes.body);
     expect(getmadni(storyRes.body), isNotNull);
   });
+
+  test("Json meta", () async {
+    final storiesUrl =
+        'http://staging.quran.com:3000/api/v3/chapters/2/verses?recitation=1&translations=21&language=en&page=1&limit=50&text_type=words';
+    final storyRes = await http.get(Uri.parse(storiesUrl));
+    //print(storyRes.body);
+    expect(getmeta(storyRes.body), isNotNull);
+  });
 }
